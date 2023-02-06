@@ -14,6 +14,15 @@ export class HeroeComponent {
         return this.nombre.toUpperCase();
     }
 
+    set cambiarNombre(nombre: string) {
+        this.nombre = nombre;
+    }
+
+    set cambiarEdad(edad: number) {
+        this.edad = edad;
+    }
+
+
     getDataHeroe(): string {
         return ` ${this.nombre} - ${this.edad}`;
     }
